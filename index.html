@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+</head>
+
+<body>
+
+    <div class="loader-bg">
+        <div class="loader">
+            <img src="./img/Blocks-1.3s-217px.gif" alt="">
+        </div>
+    </div>
+    <header>
+
+        <nav>
+
+            <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+            </div>
+
+            <div class="logo">
+                    LOGO
+            </div>
+
+            <div class="menu">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+            </div>
+        </nav>
+
+    </header>
+    <section>
+        
+    </section>
+
+    <section class="slides-section">
+        <div class="grid-1"></div>
+        <div class="grid-2"></div>
+        <div class="grid-3"></div>
+    </section>
+    <section class="button-wrap">
+        <button class="button">Load More Image</button>
+    </section>
+        <div class="overlay"></div>
+
+    <section>
+
+    </section>
+    <footer class="footer">
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, dolor neque placeat perferendis voluptatibus nulla itaque quos delectus ex non atque. Dolorum perspiciatis distinctio recusandae enim unde sit. Dolorem deleniti, sint blanditiis quaerat veritatis, dignissimos, autem sunt natus aspernatur sequi expedita eaque? Similique beatae unde nobis officia vel fugit! Vel numquam rem ab quia blanditiis? Magnam, placeat animi. Assumenda consequatur quia cum ex. Architecto, sequi officia vel corporis illum a ipsa voluptate cupiditate dolorum? Dolore incidunt, doloribus reiciendis, doloremque provident ratione, dicta nobis enim ducimus corporis vero accusantium blanditiis tempore? Obcaecati alias aliquam quaerat id. Assumenda maxime consectetur mollitia repudiandae!</div>
+    </footer>
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script type="text/javascript">
+        // spinner
+        const spinnerWrapper = document.querySelector(".loader-bg");
+        window.addEventListener("load",function(){
+            spinnerWrapper.style.display = 'none';
+        })
+
+       
+      // Menu-toggle button
+
+      $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+
+
+    </script>
+
+</body>
+</html>
