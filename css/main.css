@@ -33,6 +33,7 @@ a:hover {
 }
 
 ul,
+ol,
 li {
     list-style: none;
 }
@@ -60,18 +61,6 @@ h6 {
 
 /* Preloader ------------*/
 
-/*
-.loader-bg{
-
-    z-index:99999;
-    background:rgb(218, 33, 156);
-    width:100vh;
-    height: 100vw;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-}
-*/
 
 .preloader_gif {
     width: 100%;
@@ -91,14 +80,12 @@ h6 {
 /* Header Section Start------------*/
 
 .logo {
-    line-height: 60px;
     position: fixed;
-    float: left;
     margin: 0px 0 10px 60px;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
-    letter-spacing: 2px;
+    padding:30px;
 }
 
 nav {
@@ -114,10 +101,9 @@ nav ul {
     background: rgba(0, 0, 0, 0);
     overflow: hidden;
     color: #fff;
-    padding: 0;
     text-align: right;
     margin: 0;
-    padding-right: 40px;
+    padding: 20px;
     transition: 1s;
 }
 
@@ -125,14 +111,11 @@ nav.black ul {
     background: #202F38;
 }
 
-header {
-    /*    padding-top: 20px;*/
-}
+
 
 nav ul li {
     display: inline-block;
     padding: 0px 20px;
-    ;
 }
 
 nav ul li a {
@@ -161,13 +144,16 @@ nav ul li a {
 /* Banner Section Start------------*/
 
 .banner-area {
-    height: 100vh;
+    height: 70vh;
     background: url(../img/banner.jpg);
-    background-size: cover !important;
+    background-size: cover;
     background-position: center !important;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .banner-area:after {
@@ -182,37 +168,26 @@ nav ul li a {
 
 }
 
-.default-auto {
-    width: 100%;
 
-}
 
 .banner-content {
-    width: 500px;
-    margin: 0 auto;
-    padding: 220px 0 0 0;
-    z-index: 3;
-
+    width: 750px;
 }
 
-.banner-content h2 {
-    color: #fff;
-    margin-bottom: 6px;
-    font-weight: 800;
-    font-size: 30px;
+.banner-content .banner-title{
+    color:white;
+    font-size:48px;
 }
 
 .banner-content p {
     color: #fff;
     margin-bottom: 10px;
-    font-weight: 400;
-    line-height: 22px;
-    font-size: 18px;
+    font-size: 25px;
 }
 
 
 form.example input[type=text] {
-    padding: 10px;
+    padding: 25px;
     font-size: 17px;
     border: 1px solid grey;
     float: left;
