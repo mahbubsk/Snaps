@@ -318,7 +318,7 @@ button:focus {
 
 /* Contributr Section Start -------------------*/
 
-.contribute_part {
+.contribute_parts {
     width: 800px;
     margin: 0 auto;
     text-align: center;
@@ -326,19 +326,19 @@ button:focus {
     margin-bottom: 40px;
 }
 
-.contribute_part h3 {
+.contribute_parts h3 {
     margin-bottom: 10px;
     font-weight: 600;
 }
 
-.contribute_part p {
+.contribute_parts p {
     font-weight: 400;
     margin-top: 10px;
     color: #424242;
 }
 
 .contribute-section {
-    width: 100%;
+    width: 800px;
     margin: 0rem auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -346,6 +346,7 @@ button:focus {
     position: relative;
     text-align: center;
     padding: 60px 0 0 0;
+    
 }
 
 .contribute-item {
