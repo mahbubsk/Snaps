@@ -1,3 +1,66 @@
+/*
+    Project Name: food Project
+    version:1.0
+    author:Stack Learner
+
+
+    Table Of Content
+==============================
+    1.Header Section 
+    2.Banner Section
+    3.Photo Section
+
+*/
+
+/* Default Css Start*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a,
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Preloader ------------*/
+
+/*
 .loader-bg{
 
     z-index:99999;
@@ -8,34 +71,30 @@
     align-items:center;
     justify-content:center;
 }
+*/
 
-
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; 
-}
-
-body{
-    height: 100vh;
-    width:100vw;
-    overflow-x: hidden;
-}
-header {
+.preloader_gif {
     width: 100%;
-    height: 70vh;
-    background: url(../img/hero.jpg) no-repeat 50% 50%;
-    background-size: cover;
-    
+    height: 100vh;
+    background: #fff;
+    position: fixed;
+    z-index: 9999;
 }
 
+.preloader_gif img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
 
+/* Header Section Start------------*/
 
 .logo {
     line-height: 60px;
     position: fixed;
     float: left;
-    margin: 16px 46px;
+    margin: 0px 0 10px 60px;
     color: #fff;
     font-weight: bold;
     font-size: 20px;
@@ -63,18 +122,27 @@ nav ul {
 }
 
 nav.black ul {
-    background: #00796b;
+    background: #202F38;
+}
+
+header {
+    /*    padding-top: 20px;*/
 }
 
 nav ul li {
     display: inline-block;
-    padding: 16px 40px;;
+    padding: 0px 20px;
+    ;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 16px;
+}
+
+.joinbtn {
+    background: #65989A;
 }
 
 .menu-icon {
@@ -89,116 +157,295 @@ nav ul li a {
     display: none;
 }
 
-@media(max-width: 786px) {
 
-    .logo {
-          position: fixed;
-          top: 0;
-          margin-top: 16px;
-    }
+/* Banner Section Start------------*/
 
-    nav ul {
-          max-height: 0px;
-          background: #00796b;
-    }
+.banner-area {
+    height: 100vh;
+    background: url(../img/banner.jpg);
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1;
+}
 
-    nav.black ul {
-          background: #00796b;
-    }
-
-    .showing {
-          max-height: 34em;
-    }
-
-    nav ul li {
-          box-sizing: border-box;
-          width: 100%;
-          padding: 24px;
-          text-align: center;
-    }
-
-    .menu-icon {
-          display: block;
-    }
+.banner-area:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -2;
 
 }
 
-.slides-section{
-    width:80%;
-    margin:0rem auto;
-    display:grid;
+.default-auto {
+    width: 100%;
+
+}
+
+.banner-content {
+    width: 500px;
+    margin: 0 auto;
+    padding: 220px 0 0 0;
+    z-index: 3;
+
+}
+
+.banner-content h2 {
+    color: #fff;
+    margin-bottom: 6px;
+    font-weight: 800;
+    font-size: 30px;
+}
+
+.banner-content p {
+    color: #fff;
+    margin-bottom: 10px;
+    font-weight: 400;
+    line-height: 22px;
+    font-size: 18px;
+}
+
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    border-radius: 3px;
+    height: 45px;
+
+}
+
+
+form.example button {
+    float: left;
+    width: 13%;
+    padding: 10px;
+    color: #000;
+    font-size: 17px;
+    cursor: pointer;
+    margin-left: -2px;
+    border: none;
+    height: 45px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.tre p {
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+/* Photo Section Start------------*/
+
+.slides-section {
+    width: 80%;
+    margin: 0rem auto;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    height:4200px;
-    overflow:hidden;
+    height: 3900px;
+    overflow: hidden;
     position: relative;
 }
 
-.img-style{
-    margin:5px;
-    cursor:pointer;
+.img-style {
+    margin: 5px;
+    cursor: pointer;
     position: relative;
 }
-.img-style img{
-    width:98%;
-    margin:5px;
-    cursor:pointer;
-}
-.img-style::before{
-    content:"";
-    position:absolute;
-    width:0;
-    height:0;
-    background:black;
-    top:0;
-    left:0;
-    opacity:0.8;
-    transition:.5s;
-}
-.img-style:hover::before{
-    width:100%;
-    height:100%;
+
+.img-style img {
+    width: 98%;
+    margin: 5px;
+    cursor: pointer;
 }
 
-.overlay{
-    content:'';
-    position:absolute;
-    width:76%;
-    bottom:-219rem;
-    left:13.2rem;
-    box-shadow: -10px -20px 60px 45px #00796b;
-    z-index:1000;
+.img-style::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: black;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    transition: .5s;
 }
-.button{
-    width:450px;
-    height:50px;
-    margin:0 auto;
-    background:#00796b;
-    color:white;
-    font-size:20px;
-    border:none;
-    outline:none;
-    cursor:pointer;
-    border-radius:5px;
-    
+
+.img-style:hover::before {
+    width: 100%;
+    height: 100%;
 }
-.button-wrap{
+
+.button-wrap {
+    width: 1200px;
+    margin: 0rem auto;
     text-align: center;
-    margin-top:140px;
+}
+
+.photo-btn {
+    padding: 10px 50px;
+    background: #00897B;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+button:focus {
+    outline: none;
 }
 
 
+/* Contributr Section Start -------------------*/
 
-@media (max-width:1000px){
-    .slides-section{
-        grid-template-columns: 48% 48%;
-    }
-}
-@media (max-width:600px){
-    .slides-section{
-        grid-template-columns:95%;
-    }
+.contribute_part {
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
 }
 
-.footer{
-    margin-top:20rem;
+.contribute_part h3 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.contribute_part p {
+    font-weight: 400;
+    margin-top: 10px;
+    color: #424242;
+}
+
+.contribute-section {
+    width: 100%;
+    margin: 0rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 60px 0 0 0;
+}
+
+.contribute-item {
+    margin: 30px;
+}
+
+.contribute-item i {
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #00796B;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.contribute-item p {
+    font-weight: 400;
+    color: #424242;
+}
+
+/* Footer Start*/
+
+.main-footer {
+    background: #001320;
+    color: #fff;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    width: 1000px;
+    margin: 0rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    padding: 60px 0 0px 0;
+}
+
+.footer-item {
+    text-align: left;
+}
+
+.footer-item h4 {
+    font-weight: 500;
+    font-size: 16px;
+    color: #E0E0E0;
+}
+
+.footer-item ul {
+    margin-top: 20px;
+}
+
+.footer-item ul li {
+    color: #9E9E9E;
+}
+
+.social-media {
+    margin-bottom: 20px;
+}
+
+hr.line {
+    text-align: center;
+    /*    width:70%;*/
+    margin: 40px 150px;
+    margin: 0 rem auto;
+    border-top: 0px solid #f1f1f1;
+}
+
+/* Sub Footer Start*/
+
+.sub-footer {
+    width: 1000px;
+    margin: 0rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.footer_right {
+    text-align: right;
+}
+
+.footer_right.text-left select {
+    background: #001320;
+    color: #fff;
+    padding: 6px;
+}
+
+.button-wrap input:focus {
+    outline-offset: inherit;
+}
+
+.footer_mid {
+    text-align: left;
+}
+
+.footer_mid p {
+    color: #9E9E9E;
 }

@@ -1,99 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jquery</title>
+    <title>E-Commerce | Stock Media</title>
+    <link rel="icon" href="img/icon.png" type="img/logo.png" size="30">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
 </head>
 
 <body>
 
-    <div class="loader-bg">
-        <div class="loader">
-            <img src="./img/Blocks-1.3s-217px.gif" alt="">
-        </div>
+    <!-- Pre-Loader********** Start -->
+
+    <div class="loader preloader_gif">
+        <img src="./img/Blocks-1.3s-217px.gif" alt="">
     </div>
+
+
+
+    <!-- Header Section Start********** -->
     <header>
 
         <nav>
 
             <div class="menu-icon">
-                    <i class="fa fa-bars fa-2x"></i>
+                <i class="fa fa-bars fa-2x"></i>
             </div>
 
             <div class="logo">
-                    LOGO
+                <img src="img/logo.png" alt="" width="100">
             </div>
 
             <div class="menu">
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                <ul>
+                    <li><a href="#">Info</a></li>
+                    <li><a href="#">Upload</a></li>
+                    <li class="joinbtn"><a href="#">join</a></li>
+
+                </ul>
             </div>
+
         </nav>
 
     </header>
+
+    <!-- Banner Section Start********** -->
+
+    <div class="banner-area">
+        <div class="banner-content default-auto">
+            <h2>SNAPS</h2>
+            <p>Sharing free and premium images, videoes by creators<br>all over the world</p>
+            <form class="example">
+                <input type="text" placeholder="Search for quality photos and videoes">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+            <div class="tre">
+                <p>Trending: flower, wallpapers, backgrounds, happy, love</p>
+            </div>
+        </div>
+    </div>
+
     <section>
-        
+
     </section>
+
+    <!-- Photo Section Start********** -->
 
     <section class="slides-section">
         <div class="grid-1"></div>
         <div class="grid-2"></div>
         <div class="grid-3"></div>
     </section>
+
     <section class="button-wrap">
-        <button class="button">Load More Image</button>
+        <input type="button" class="photo-btn" value="Viwe More Images">
     </section>
-        <div class="overlay"></div>
+
+
+    <!-- Contributr Section Start-->
+    <section>
+        <div class=" contribute_part">
+
+            <h2>Contribute as a Creator</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius platea auctor risus pharetra quam mauris diam quam. Sem ac tellus, eget amet blandit eu. Feugiat consequat pellentesque placerat feugiat in metus est. Mattis massa id tempus faucibus accumsan vitae nunc interdum sagittis.</p>
+
+            <div class="contribute-section">
+
+                <div class="contribute-item">
+                    <i class="fa fa-search"></i>
+                    <p>Create an account with your basic info.
+                        Provide your bank account info currectly. You are all set to contributee</p>
+                </div>
+                <div class="contribute-item">
+                    <i class="fa fa-search"></i>
+                    <p>Create an account with your basic info.
+                        Provide your bank account info currectly. You are all set to contribute</p>
+                </div>
+                <div class="contribute-item">
+                    <i class="fa fa-search"></i>
+                    <p>Create an account with your basic info.
+                        Provide your bank account info currectly. You are all set to contribute</p>
+                </div>
+            </div>
+        </div>
+        <section class="button-wrap">
+            <button class="photo-btn">Join Now</button>
+        </section>
+    </section>
+
+    <!-- footer Section Start-->
+    <section class="main-footer">
+        <div class="footer">
+
+            <div class="footer-item">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li>Jion as a Contributor</li>
+                    <li>Join as Download</li>
+                    <li>About us</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>LEGEL</h4>
+                <ul>
+                    <li>Term and Condition</li>
+                    <li> Privacy Policy</li>
+                    <li>Cookies Setting</li>
+                    <li>Copyright Information</li>
+
+                </ul>
+            </div>
+            <div class="footer-item">
+                <h4>GET HELP</h4>
+                <ul>
+                    <li>Support</li>
+                    <li>Contact Us</li>
+
+                </ul>
+            </div>
+            <div class="footer-item ">
+                <h4 class="social-media">GET CONNECTED</h4>
+
+                <i class="fa fa-bars fa-2x"></i>
+                <i class="fa fa-bars fa-2x"></i>
+                <i class="fa fa-bars fa-2x"></i>
+            </div>
+
+        </div>
+        <hr class="line">
+        <!--Sub footer Start -->
+        <div class="sub-footer">
+            <div class="footer_left">
+                <img src="img/logo.png" width="100">
+            </div>
+            <div class="footer_mid">
+                <p>© 2003-2021 Snaps, Inc.</p>
+            </div>
+            <div class="footer_right text-left">
+                <select>
+                    <option>English</option>
+                    <option>Bangla</option>
+                    <option>France</option>
+
+                </select>
+
+
+            </div>
+        </div>
+
+
+    </section>
+
 
     <section>
 
-    </section>
-    <footer class="footer">
-        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, dolor neque placeat perferendis voluptatibus nulla itaque quos delectus ex non atque. Dolorum perspiciatis distinctio recusandae enim unde sit. Dolorem deleniti, sint blanditiis quaerat veritatis, dignissimos, autem sunt natus aspernatur sequi expedita eaque? Similique beatae unde nobis officia vel fugit! Vel numquam rem ab quia blanditiis? Magnam, placeat animi. Assumenda consequatur quia cum ex. Architecto, sequi officia vel corporis illum a ipsa voluptate cupiditate dolorum? Dolore incidunt, doloribus reiciendis, doloremque provident ratione, dicta nobis enim ducimus corporis vero accusantium blanditiis tempore? Obcaecati alias aliquam quaerat id. Assumenda maxime consectetur mollitia repudiandae!</div>
-    </footer>
 
-    
+
+    </section>
+
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./js/main.js"></script>
     <script type="text/javascript">
         // spinner
         const spinnerWrapper = document.querySelector(".loader-bg");
-        window.addEventListener("load",function(){
+        window.addEventListener("load", function() {
             spinnerWrapper.style.display = 'none';
         })
 
-       
-      // Menu-toggle button
 
-      $(document).ready(function() {
+        // Menu-toggle button
+
+        $(document).ready(function() {
             $(".menu-icon").on("click", function() {
-                  $("nav ul").toggleClass("showing");
+                $("nav ul").toggleClass("showing");
             });
-      });
+        });
 
-      // Scrolling Effect
+        // Scrolling Effect
 
-      $(window).on("scroll", function() {
-            if($(window).scrollTop()) {
-                  $('nav').addClass('black');
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            } else {
+                $('nav').removeClass('black');
             }
+        })
 
-            else {
-                  $('nav').removeClass('black');
-            }
-      })
-
+        // preloader add
+        $(window).on('load', function() {
+            $('.preloader_gif').delay(500).fadeOut(500);
+        });
 
     </script>
 
 </body>
+
 </html>
