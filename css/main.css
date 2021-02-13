@@ -93,6 +93,7 @@ nav {
     width: 100%;
     line-height: 60px;
     z-index: 100;
+
 }
 
 nav ul {
@@ -101,10 +102,10 @@ nav ul {
     background: rgba(0, 0, 0, 0);
     overflow: hidden;
     color: #fff;
-    text-align: right;
     margin: 0;
     padding: 20px;
     transition: 1s;
+    text-align: right;;
 }
 
 nav.black ul {
@@ -115,7 +116,7 @@ nav.black ul {
 
 nav ul li {
     display: inline-block;
-    padding: 0px 20px;
+    padding: 0px 15px;
 }
 
 nav ul li a {
@@ -125,7 +126,9 @@ nav ul li a {
 }
 
 .joinbtn {
-    background: #65989A;
+    background: #00897B;
+    width:80px;
+    text-align: center;
 }
 
 .menu-icon {
@@ -139,15 +142,17 @@ nav ul li a {
     color: #fff;
     display: none;
 }
-
+.menu-items{
+    padding-right:100px;
+}
 
 /* Banner Section Start------------*/
 
 .banner-area {
-    height: 70vh;
+    height: 88vh;
     background: url(../img/banner.jpg);
-    background-size: cover;
-    background-position: center !important;
+    background-size: 100%;
+    background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 1;
@@ -163,7 +168,7 @@ nav ul li a {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+
     z-index: -2;
 
 }
@@ -171,7 +176,7 @@ nav ul li a {
 
 
 .banner-content {
-    width: 750px;
+    width: 850px;
 }
 
 .banner-content .banner-title{
@@ -181,54 +186,46 @@ nav ul li a {
 
 .banner-content p {
     color: #fff;
-    margin-bottom: 10px;
     font-size: 25px;
+    margin-top:20px;
 }
 
+form.example{
+    display:flex;
+    margin-top:40px;
+}
 
 form.example input[type=text] {
     padding: 25px;
     font-size: 17px;
-    border: 1px solid grey;
-    float: left;
     width: 80%;
     background: #f1f1f1;
-    border-radius: 3px;
-    height: 45px;
-
+    border-radius: 7px 0 0 7px;
+    border:none;
+    outline:none;
 }
 
 
 form.example button {
-    float: left;
-    width: 13%;
-    padding: 10px;
+    padding: 25px;
     color: #000;
     font-size: 17px;
     cursor: pointer;
-    margin-left: -2px;
     border: none;
-    height: 45px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
+    outline:none;
+    border-radius:0 7px 7px 0;
+    display:flex;
+    justify-content: center;
 
 }
 
-input:focus {
-    outline: none;
-}
 
 
 /* Clear floats */
-form.example::after {
-    content: "";
-    clear: both;
-    display: table;
-}
 
-.tre p {
-    font-weight: 300;
+.tre {
     margin-top: 10px;
+    color:white;
 }
 
 
